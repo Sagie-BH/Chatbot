@@ -1,0 +1,84 @@
+version: "3.1"
+
+stories:
+
+- story: greet and ask
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: how_are_you
+  - action: utter_how_are_you
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: login story
+  steps:
+  - intent: login_instructions
+  - action: utter_login_instructions
+
+- story: reset password story
+  steps:
+  - intent: reset_password
+  - action: utter_reset_password
+
+- story: accept terms story
+  steps:
+  - intent: accept_terms
+  - action: utter_accept_terms
+
+- story: enter site story
+  steps:
+  - intent: enter_site
+  - action: utter_enter_site
+
+- story: ask weather story
+  steps:
+  - intent: ask_weather
+  - action: utter_weather_info
+
+- story: ask time story
+  steps:
+  - intent: ask_time
+  - action: utter_time_info
+
+- story: ask how are you story
+  steps:
+  - intent: ask_how_are_you
+  - action: utter_feeling
+
+- story: thank and goodbye
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: login instructions
+  steps:
+  - intent: login_instructions
+  - action: utter_login_instructions

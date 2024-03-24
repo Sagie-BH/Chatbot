@@ -1,0 +1,152 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+    - שלום
+    - היי
+    - היי שם
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - להתראות
+    - יום טוב
+    - ביי
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: login_instructions
+  examples: |
+    - כיצד לבצע כניסה ראשונית?
+    - איך אני מתחבר למערכת?
+    - תהליך כניסה ל-datwise
+    - איך להתחבר?
+    - איך אני נכנס למערכת?
+    - צעדים להתחברות
+
+- intent: reset_password
+  examples: |
+    - איך לאפס סיסמא?
+    - שכחתי את הסיסמה שלי
+    - צריך עזרה באיפוס סיסמה
+    - איפוס סיסמה
+
+- intent: accept_terms
+  examples: |
+    - אישור תנאי שימוש
+    - אני מסכים לתנאים
+    - קראתי ואישרתי את התנאים
+
+- intent: ask_weather
+  examples: |
+    - מה מזג האוויר היום?
+    - כמה מעלות יש בחוץ?
+    - האם ירד גשם מחר?
+
+- intent: ask_time
+  examples: |
+    - מה השעה?
+    - כמה עכשיו?
+    - איזו שעה נפגשים?
+
+- intent: ask_how_are_you
+  examples: |
+    - מה שלומך?
+    - איך אתה מרגיש היום?
+    - הכל בסדר איתך?
+
+- intent: thank_you
+  examples: |
+    - תודה רבה
+    - תודה
+    - אני מודה לך
+
+- intent: accept_terms
+  examples: |
+    - איך לאשר את התנאים?
+    - אישור תנאי שימוש
+    - קראתי ואני מסכים
+
+- intent: enter_site
+  examples: |
+    - איך להיכנס לאתר?
+    - כניסה ל-datwise
+    - צעדים לכניסה לאתר

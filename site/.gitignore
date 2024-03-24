@@ -1,0 +1,9 @@
+# Node.js server
+node_modules/
+
+# .ejs file site
+/views/*.ejs
+
+# Rasa Python chatbot
+rasa_python_chatbot/models/
+rasa_python_chatbot/.venv/

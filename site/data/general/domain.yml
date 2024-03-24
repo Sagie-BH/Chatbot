@@ -1,0 +1,73 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - login_instructions
+  - reset_password
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_login_instructions:
+  - text: "לכניסה ראשונית, בקר באתר www.datwise.co.il והקלד את שם המשתמש והסיסמה שהתקבלו במייל."
+
+  utter_reset_password:
+  - text: "לאיפוס סיסמה, לחץ על אופציית 'שכחתי סיסמה' בדף הכניסה ועקוב אחר ההוראות."
+
+  utter_accept_terms:
+    - text: "לאישור תנאי השימוש, יש לסמן את התיבה 'קראתי ואישרתי את תנאי השימוש' וללחוץ על 'המשך'."
+
+  utter_enter_site:
+    - text: "לכניסה לאתר, הקלד את כתובת האתר www.datwise.co.il בדפדפן והזן את שם המשתמש והסיסמה שקיבלת במייל."
+
+  utter_weather_info:
+    - text: "היום מזג האוויר נעים, כ-25 מעלות צלזיוס ושמשי."
+
+  utter_time_info:
+    - text: "השעה כרגע היא 3 אחר הצהריים."
+
+  utter_feeling:
+    - text: "אני בסדר גמור, תודה ששאלת! איך אני יכול לעזור לך היום?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_login_instructions
+  - utter_reset_password
+  - utter_accept_terms
+  - utter_enter_site
+  - utter_weather_info
+  - utter_time_info
+  - utter_feeling
